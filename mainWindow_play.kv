@@ -1,0 +1,67 @@
+#:import MeshLinePlot kivy_garden.graph.MeshLinePlot
+RootWidget:
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            size_hint: [1, .8]
+            Graph:
+                id: graph
+                xlabel: "Time"
+                ylabel: "Pressur"
+                y_ticks_major: 4
+                x_ticks_major: 4
+                y_grid_label: True
+                x_grid_label: True
+                padding: 5
+                x_grid: True
+                y_grid: True
+                ymin: -1
+                ymax: 25
+                xmin: 0
+                xmax: 25
+            Graph:
+                id: graph2
+                xlabel: "Time"
+                ylabel: "Pressure"
+                y_ticks_major: 4
+                x_ticks_major: 4
+                y_grid_label: True
+                x_grid_label: True
+                padding: 5
+                x_grid: True
+                y_grid: True
+                ymin: -1
+                ymax: 25
+                xmin: 0
+                xmax: 25
+            Graph:
+                id: graph3
+                xlabel: "Time"
+                ylabel: "Pressure"
+                y_ticks_major: 4
+                x_ticks_major: 4
+                y_grid_label: True
+                x_grid_label: True
+                padding: 5
+                x_grid: True
+                y_grid: True
+                ymin: -1
+                ymax: 25
+                xmin: 0
+                xmax: 25
+
+        BoxLayout:
+            size_hint: [0.8, .2]
+            orientation: "horizontal"
+            Button:
+                text: "START"
+                bold: True
+                on_press: root.start()
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint: [.5, .2]
+                Label:
+                    text: 'Input values:'
+                TextInput:
+                    id:value1
+            
